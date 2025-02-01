@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finan Marketing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .home {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about, .services, .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service-item {
+            background-color: #e0e0e0;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .contact form label {
+            margin: 10px 0 5px;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Finan Marketing</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2>مرحبا بكم في Finan Marketing</h2>
+            <p>نحن شركة تسويق متخصصة في تقديم أفضل الحلول التسويقية لعملائنا.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن فريق من المحترفين المتخصصين في التسويق الرقمي وإدارة الحملات التسويقية.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="service-item">
+                <h3>التسويق عبر وسائل التواصل الاجتماعي</h3>
+                <p>إدارة حملات وسائل التواصل الاجتماعي لزيادة تفاعل جمهورك.</p>
+            </div>
+            <div class="service-item">
+                <h3>تحسين محركات البحث (SEO)</h3>
+                <p>رفع ترتيب موقعك في محركات البحث وزيادة الزيارات.</p>
+            </div>
+            <div class="service-item">
+                <h3>الإعلانات المدفوعة</h3>
+                <p>استراتيجيات متكاملة لزيادة التحويلات وتحقيق الأهداف.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <form action="#">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Finan Marketing. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
